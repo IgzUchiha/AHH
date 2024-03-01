@@ -5,7 +5,7 @@
   <title>Home Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
-    body {
+   body {
       margin: 0;
       font-family: Arial, sans-serif;
     }
@@ -57,30 +57,26 @@
     .social-media i {
       color: white;
     }
-    .services-section {
-      padding: 20px;
-      background-color: #f5f5f5;
+    .services-section, .urgent-admission-section {
+      background-color: #4f6dce; /* Blue background */
+      color: white; /* White text color */
+      padding: 20px; /* Some padding */
+      margin-top: 40px; /* Space above the divider */
+      text-align: center; /* Center the text */
     }
-    .services-section h2 {
+    .services-section h2, .urgent-admission-section h2 {
       margin-top: 0;
     }
-    .services-section ul {
+    .services-section ul, .urgent-admission-section ul {
       list-style-type: none;
       padding: 0;
+      margin: 0; /* Remove default margin */
+      text-align: center; /* Center the list */
     }
-    .services-section li {
-      margin-bottom: 10px;
-    }
-    /* Urgent Admission Section */
-    .urgent-admission-section {
-      padding: 20px;
-      background-color: #e7e7e7;
-    }
-    .urgent-admission-section h2 {
-      margin-top: 0;
-    }
-    .urgent-admission-section p {
-      margin-bottom: 10px;
+    .services-section li, .urgent-admission-section li {
+      display: inline-block; /* Display list items inline */
+      margin: 0 10px; /* Add horizontal spacing */
+      text-align: left; /* Align text to the left */
     }
     /* Responsive design adjustments */
     @media (max-width: 768px) {
@@ -104,7 +100,7 @@
     <ul>
       <li><a href="/about">About/Services</a></li>
       <li><a href="/">Home</a></li>
-      <li><a href="/TeamMembers">Team Members</a></li>
+      <!-- <li><a href="/TeamMembers">Team Members</a></li> -->
      
       <li><a href="/ContactUs">Contact Us</a></li>
       <li><a href="/Locations">Locations</a></li>
@@ -134,8 +130,8 @@
       <li>Patient Education</li>
       <li>Psychological Services</li>
       <li>Pain and Symptom Management</li>
-      <li>Physical, Occupational, and Speech Therapy</li>
-      <li>Supplies, Medication, Transportation, and Durable Medical Equipment Related to Diagnosis</li>
+      <li>Physical Occupational and Speech Therapy</li>
+      <li>Supplies Medication Transportation and Durable Medical Equipment Related to Diagnosis</li>
       <li>Continuous Care Services</li>
     </ul>
   </div>
