@@ -1,5 +1,5 @@
 [build]
-  publish = "public" # Replace with the correct directory where your build output is located
+  publish = "/AHH/index.js" # Replace with the correct directory where your build output is located
   command = "nodemon index.js" # Replace with your build command if you have one
 
 [[redirects]]
