@@ -1,7 +1,6 @@
 [build]
-  base = "AHH" # Only if your project is in a subfolder named AHH
-  publish = "AHH/public" # Adjust to your actual publish directory
-  # command = "npm run build" # Uncomment and adjust if you have a build command
+  publish = "public" # Replace with the correct directory where your build output is located
+  command = "nodemon index.js" # Replace with your build command if you have one
 
 [[redirects]]
   from = "/*"
