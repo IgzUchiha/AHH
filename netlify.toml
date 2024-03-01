@@ -1,6 +1,6 @@
 [build]
-  base = "AHH/index.js" # Only include this line if AHH is a directory containing your project files.
-  publish = "AHH/index.js/public" # Adjust to the directory where your build output is located.
+  base = "/AHH/index.js" # Only include this line if AHH is a directory containing your project files.
+  publish = "/AHH/index.js/public" # Adjust to the directory where your build output is located.
   command = "node index.js" # Replace with your actual build command, or remove if not needed.
 
 [[redirects]]
