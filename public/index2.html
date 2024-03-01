@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Add Font Awesome for icons -->
+
+  <div class="navbar">
+    <ul>
+      <li><a href="/about">About/Services</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/TeamMembers">Team Members</a></li>
+     
+      <li><a href="/ContactUs">Contact Us</a></li>
+      <li><a href="/Locations">Locations</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.glassdoor.com" target="_blank"><i class="fab fa-glassdoor"></i> Glassdoor</a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center ;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      /* Adjusted to space-between to allow space for social media links */
+      align-items: center;
+      background-color: rgb(79, 109, 206);
+      padding: 10px 20px;
+    }
+
+    .logos-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .logo, .logo2, .logo3 {
+      height: auto;
+      padding: 10px;
+    }
+    .logo {
+      max-width: 200px;
+    }
+    .logo2 {
+      max-width: 800px;
+    }
+    .logo3 {
+      max-width: 200px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .navbar li {
+      padding: 0 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .social-media {
+      display: flex;
+    }
+
+    .social-media a {
+      padding: 0 5px;
+    }
+
+    .social-media i {
+      color: white;
+    }
+
+    .contact-info {
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  resize: vertical; /* Allows vertical resizing of the textarea */
+}
+
+.form-group button[type="submit"] {
+  padding: 10px 20px;
+  background-color: rgb(79, 109, 206);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-group button[type="submit"]:hover {
+  background-color: rgb(58, 82, 157);
+}
+  </style>
+</head>
+
+<body>
+  <div class="navbar" class="logos-container">
+    <!-- Navbar content -->
+  </div>
+  <img src="/img/AHHC-Gold.jpg" alt="AHHCARE Logo" class="logo">
+  <img src="/img/AHHC.jpg" alt="AHHCARE Logo" class="logo2">
+  <img src="/img/cansay.jpg" alt="AHHCARE Logo" class="logo3">
+  <!-- Add more content here -->
+
+  <div class="contact-info">
+    <h2>Jonathan Rios</h2>
+    <p>Director of Operations</p>
+    <p>QAPI Manager | Management</p>
+    <p>Email: <a href="mailto:jonathan.rios@ahhhcare.com">jonathan.rios@ahhhcare.com</a></p>
+    <p>American Home Health Care</p>
+    <p>7031 Koll Center Parkway, Suite 210, Pleasanton, CA</p>
+    <p>Office: (510) 574-0390 | Fax: (510) 574-0962</p>
+  </div>
+
+  <div class="contact-info">
+    <p>American Hospice & Home Health Care Services</p>
+    <p>7031 Koll Center Parkway, Suite 230, Pleasanton, CA</p>
+    <p>Office: (925) 240-6300 | Fax: (925) 240-6301</p>
+    <p>Website: <a href="http://www.ahhhcare.com" target="_blank">www.ahhhcare.com</a></p>
+  </div>
+
+  <div class="form-container">
+    <form action="/form.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" id="zip-code" name="zip_code" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" maxlength="3000" required></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  <!-- Add more contact-info divs as needed -->
+</body>
+
+</html>

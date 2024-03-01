@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>American Hospice & Home Health Care Services - Locations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(79, 109, 206);
+            padding: 10px 20px;
+        }
+
+        .logos-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .logo,
+        .logo2,
+        .logo3 {
+            height: auto;
+            padding: 10px;
+        }
+
+        .logo {
+            max-width: 200px;
+        }
+
+        .logo2 {
+            max-width: 800px;
+        }
+
+        .logo3 {
+            max-width: 200px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            padding: 0 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-media {
+            display: flex;
+        }
+
+        .social-media a {
+            padding: 0 5px;
+        }
+
+        .social-media i {
+            color: white;
+        }
+
+        .section-header {
+            background-color: #4f6dce;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            margin-top: 40px;
+        }
+
+        .services-section,
+        .insurance-section,
+        .specialization-section {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+        }
+
+        .services-list,
+        .insurance-list,
+        .specialization-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .services-list li,
+        .insurance-list li,
+        .specialization-list li {
+            margin-bottom: 10px;
+        }
+        .buttons-container {
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .button {
+            background-color: #4f6dce;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3b5aa7;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/about">About/Services</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/TeamMembers">Team Members</a></li>
+
+            <li><a href="/ContactUs">Contact Us</a></li>
+            <li><a href="/Locations">Locations</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://www.glassdoor.com" target="_blank"><i class="fab fa-glassdoor"></i> Glassdoor</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+    <div class="logos-container">
+        <img src="/img/AHHC-Gold.jpg" alt="AHHCARE Logo" class="logo">
+        <img src="/img/AHHC.jpg" alt="AHHCARE Logo" class="logo2">
+        <img src="/img/cansay.jpg" alt="AHHCARE Logo" class="logo3">
+    </div>
+    <div class="buttons-container">
+        <button class="button" onclick="location.href='index4.html'">Home Health Learn more</button>
+        <button class="button" onclick="location.href='index4.html'">Hospice Learn more</button>
+    </div>
+
+    <!-- Skilled Nursing Section -->
+    <div class="section-header">Skilled Nursing</div>
+    <div class="services-section">
+        <ul class="services-list">
+            <li>Certified Wound Care</li>
+            <li>Catheter Care</li>
+            <li>IV / PICC Infusion</li>
+            <li>Behavioral Health</li>
+            <li>Medication Management</li>
+            <li>Disease Education</li>
+            <li>Symptom Management</li>
+            <li>Ostomy</li>
+            <li>TPN</li>
+        </ul>
+    </div>
+
+    <!-- Therapies Section -->
+    <div class="section-header">Therapies</div>
+    <div class="services-section">
+        <ul class="services-list">
+            <li>Physical Therapy</li>
+            <li>Occupational Therapy</li>
+            <li>Speech Therapy</li>
+        </ul>
+    </div>
+
+    <!-- Bathing & Grooming Section -->
+    <div class="section-header">Home Health and Aid</div>
+    <div class="services-section">
+        <ul class="services-list">
+            <!-- Content for Bathing & Grooming -->
+            <li>Bathing</li>
+            <li>Grooming</li>
+        </ul>
+    </div>
+
+    <!-- Social Worker Resources/Support Section -->
+    <div class="section-header">Social Worker</div>
+    <div class="services-section">
+        <!-- Content for Social Worker Resources/Support -->
+        <ul class="services-list">
+            <li>Resources</li>
+            <li>Support</li>
+
+        </ul>
+    </div>
+
+    <!-- Contracted Insurance Section -->
+    <div class="section-header">Contracted Insurance</div>
+    <div class="insurance-section">
+        <ul class="insurance-list">
+            <li>Medicare</li>
+            <li>Kaiser</li>
+            <li>Health Net</li>
+            <li>Alignment</li>
+            <li>Blue Shield</li>
+            <li>Medical</li>
+            <li>HPSJ</li>
+            <li>Alameda Alliance</li>
+            <li>Contra Costa H.P</li>
+            <li>Partnership</li>
+            <li>Tricare</li>
+        </ul>
+    </div>
+
+    <!-- Specialization Section -->
+    <div class="section-header">Specializing In</div>
+    <div class="specialization-section">
+        <ul class="specialization-list">
+
+            <li>Wound Care</li>
+            <li>Fall Prevention</li>
+            <li>COPD</li>
+            <li>CHF</li>
+            <li>Ortho Rehab</li>
+            <li>Diabetes</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(79, 109, 206);
+      padding: 10px 20px;
+    }
+    .logos-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .logo, .logo2, .logo3 {
+      height: auto;
+      padding: 10px;
+    }
+    .logo {
+      max-width: 200px;
+    }
+    .logo2 {
+      max-width: 500px;
+    }
+    .logo3 {
+      max-width: 200px;
+    }
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+    .navbar li {
+      padding: 0 10px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+    }
+    .social-media {
+      display: flex;
+    }
+    .social-media a {
+      padding: 0 5px;
+    }
+    .social-media i {
+      color: white;
+    }
+    .services-section {
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .services-section h2 {
+      margin-top: 0;
+    }
+    .services-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services-section li {
+      margin-bottom: 10px;
+    }
+    /* Urgent Admission Section */
+    .urgent-admission-section {
+      padding: 20px;
+      background-color: #e7e7e7;
+    }
+    .urgent-admission-section h2 {
+      margin-top: 0;
+    }
+    .urgent-admission-section p {
+      margin-bottom: 10px;
+    }
+    /* Responsive design adjustments */
+    @media (max-width: 768px) {
+      /* Adjustments for smaller screens like iPhone 12 Pro */
+      body {
+        margin-top: 0;
+        padding-top: 0;
+      }
+      .logos-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .logo2, .logo3 {
+        display: none; /* Hide larger logos on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/about">About/Services</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/TeamMembers">Team Members</a></li>
+     
+      <li><a href="/ContactUs">Contact Us</a></li>
+      <li><a href="/Locations">Locations</a></li>
+    </ul>
+    <div class="social-media">
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://www.glassdoor.com" target="_blank"><i class="fab fa-glassdoor"></i> Glassdoor</a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </div>
+  <div class="logos-container">
+    <img src="/img/AHHC-Gold.jpg" alt="AHHCARE Logo" class="logo">
+    <img src="/img/AHHC.jpg" alt="AHHCARE Logo" class="logo2">
+    <img src="/img/cansay.jpg" alt="AHHCARE Logo" class="logo3">
+  </div>
+  <!-- Add more content here -->
+  <div class="services-section">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Physician Services</li>
+      <li>Skilled Nursing</li>
+      <li>Spiritual Counseling</li>
+      <li>Volunteer Service</li>
+      <li>Respite Care</li>
+      <li>Hospice Aid Services</li>
+      <li>Inpatient Services</li>
+      <li>Patient Education</li>
+      <li>Psychological Services</li>
+      <li>Pain and Symptom Management</li>
+      <li>Physical, Occupational, and Speech Therapy</li>
+      <li>Supplies, Medication, Transportation, and Durable Medical Equipment Related to Diagnosis</li>
+      <li>Continuous Care Services</li>
+    </ul>
+  </div>
+
+  <!-- Urgent Admission Section -->
+  <div class="urgent-admission-section">
+    <h2>Urgent Admission?</h2>
+    <p>We're available for consult and admissions 24/7.</p>
+    <p>Servicing:</p>
+    <ul>
+      <li>San Joaquin</li>
+      <li>Stanislaus</li>
+      <li>Santa Clara</li>
+      <li>Solano</li>
+      <li>Alameda</li>
+      <li>Contra Costa</li>
+    </ul>
+  </div>
+
+
+</body>
+</html>
