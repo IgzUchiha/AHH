@@ -1,8 +1,11 @@
 [build]
-  base = "/AHH/" # Only include this line if AHH is a directory containing your project files.
-  publish = "/AHH/public/" # Adjust to the directory where your build output is located.
-  command = "node index.js" # Replace with your actual build command, or remove if not needed.
-  function_directory = /AHH/index.js/netlify/functions
+  base = "AHH"
+  publish = "AHH/public" # Adjust this path to where your static site files are generated
+  command = "npm run build" # Adjust this command to your actual build command
+
+[functions]
+  directory = "AHH/netlify/functions" # Assuming your functions are in this directory, adjust if necessary
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
