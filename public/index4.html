@@ -92,6 +92,28 @@
       .logo2, .logo3 {
         display: none; /* Hide larger logos on small screens */
       }
+
+    } .phone-number-section {
+      background-color: #4f6dce; /* Blue background */
+      color: white; /* White text color */
+      padding: 20px; /* Some padding */
+      margin-top: 40px; /* Space above the section */
+      text-align: center; /* Center the text */
+    }
+    .phone-number-section h2 {
+      margin: 0; /* Remove default margin */
+      padding-bottom: 10px; /* Space between the heading and phone number */
+    }
+    .phone-number {
+      font-size: 48px; /* Large font size for the phone number */
+      font-weight: bold; /* Make the phone number bold */
+      margin: 0; /* Remove default margin */
+    }
+    /* Responsive design adjustments for the phone number section */
+    @media (max-width: 768px) {
+      .phone-number {
+        font-size: 32px; /* Slightly smaller font size on smaller screens */
+      }
     }
   </style>
 </head>
@@ -150,7 +172,12 @@
       <li>Contra Costa</li>
     </ul>
   </div>
+  <div class="phone-number-section">
+    <h2>Need to Speak with us? Reach out at. </h2>
+    <p class="phone-number">(925) 964-6335</p>
 
+
+  </div>
 
 </body>
 </html>
