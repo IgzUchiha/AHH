@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "public" # Adjust if your static site files are in a different directory
-  command = "nodemon index.js" # Your actual start command
+  command = "node index.js" # Your actual start command
 
 [functions]
   directory = "netlify/functions" # Adjust if necessary, and ensure the directory exists
