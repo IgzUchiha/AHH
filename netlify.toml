@@ -1,5 +1,5 @@
 [build]
-  base = "/opt/build/repo/AHH"
+  base = "/"
   publish = "public" # Adjust if your static site files are in a different directory
   command = "nodemon index.js" # Your actual start command
 
