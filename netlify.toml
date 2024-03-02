@@ -1,10 +1,10 @@
 [build]
-  base = "AHH"
-  publish = "public" # Adjust this path to where your static site files are generated
-  command = "node index.js" # Adjust this command to your actual build command
+  # base = "AHH" # Comment this out if your project root is the repository root
+  publish = "public" # Adjust if your static site files are in a different directory
+  command = "node index.js" # Your actual start command
 
 [functions]
-  directory = "AHH/netlify/functions" # Assuming your functions are in this directory, adjust if necessary
+  directory = "netlify/functions" # Adjust if necessary, and ensure the directory exists
 
 [[redirects]]
   from = "/*"
